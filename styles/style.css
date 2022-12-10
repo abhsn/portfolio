@@ -1,0 +1,81 @@
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('../assets/fonts/SpaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf');
+}
+
+@font-face {
+	font-family: 'Dancing Script';
+	src: url('../assets/fonts/DancingScript/DancingScript-VariableFont_wght.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Space Grotesk';
+}
+
+header {
+	background-color: #222629;
+	color: white;
+	position: fixed;
+	width: 100%;
+	padding: 20px;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+#menu-btn {
+	border: none;
+	background: none;
+	color: white;
+	cursor: pointer;
+}
+
+header nav {
+	position: fixed;
+	right: 0;
+	background-color: #222629;
+	width: 30%;
+	height: 100%;
+}
+
+.nav-animation-in {
+	animation-name: slidein;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+.nav-animation-out {
+	animation-name: slideout;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+header nav li {
+	display: grid;
+	justify-items: center;
+	padding: 20px;
+}
+
+header nav a {
+	color: white;
+	font-size: 17px;
+	text-decoration: none;
+}
+
+header nav ul {
+	list-style: none;
+	margin: 20px 0;
+}
+
+@keyframes slidein {
+	to {
+		right: 0;
+	}
+}
