@@ -21,7 +21,7 @@ body {
 header {
 	background: linear-gradient(45deg, #e66465, #9198e5);
 	color: white;
-	position: fixed;
+	/* position: fixed; */
 	width: 100%;
 	padding: 15px 20px;
 	top: 0;
@@ -48,6 +48,7 @@ header nav {
 	background-color: #222629;
 	width: 30%;
 	height: 100%;
+	z-index: 1;
 }
 
 .nav-animation-in {
@@ -93,7 +94,50 @@ main {
 	background-color: #2f3538;
 	/* background: linear-gradient(45deg, #e66465, #9198e5); */
 	color: white;
-	height: 100vh;
+	/* height: 100vh; */
+	/* margin: 70px 0 0 0; */
+	padding: 50px;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.projects {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.projects div {
+	position: relative;
+}
+
+.projects button {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: none;
+	background-color: white;
+	font-size: 1rem;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+@media (max-width:1300px) {
+	.projects {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media (max-width: 740px) {
+	.projects div {
+		display: grid;
+		justify-items: center;
+	}
+
+	.projects img {
+		width: 100%;
+	}
 }
 
 .details {
@@ -125,7 +169,6 @@ main {
 	border-image: linear-gradient(45deg, #e66465, #9198e5);
 	border-image-slice: 1;
 	padding: 10px 20px;
-	text-decoration: none;
 }
 
 .projects-btn:hover {
