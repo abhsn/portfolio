@@ -30,6 +30,11 @@ header {
 	justify-content: space-between;
 }
 
+header a {
+	color: white;
+	text-decoration: none;
+}
+
 #menu-btn {
 	border: none;
 	background: none;
@@ -78,4 +83,12 @@ header nav ul {
 	to {
 		right: 0;
 	}
+}
+
+footer {
+	display: grid;
+	justify-items: center;
+	padding: 20px 0;
+	background-color: #222527;
+	color: white;
 }
