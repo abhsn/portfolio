@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../styles/contact.css">
+	<script src="../scripts/app.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<a href="/"><span style="font-family: 'Dancing Script'; font-weight: 700; font-size: 30px;">AbidHasan</span></a>
+		<button onclick="toggleMenu()" id="menu-btn"><img src="../assets/images/burger.svg" alt="burger" height="40px"
+				width="40px"></button>
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/projects">Porjects</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<h2 style="margin-bottom: 20px;">Connect with me</h2>
+			<p>Fill in the form and send your queries. I will respond to you as soon as possible. You can also directly
+				email me.</p>
+		</section>
+		<section>
+			<form action="https://formsubmit.co/ab1dh4san@gmail.com" method="POST">
+				<h2>Send a message</h2>
+				<div>
+					<label for="name">Full Name</label>
+					<br>
+					<input type="text" name="name" id="name" required>
+				</div>
+				<div>
+					<label for="email">Email</label>
+					<br>
+					<input type="email" name="email" id="email" required>
+				</div>
+				<div>
+					<label for="subject">Subject</label>
+					<br>
+					<input type="text" name="_subject" id="subject" required>
+				</div>
+				<div>
+					<label for="message">Message</label>
+					<br>
+					<textarea name="message" id="message" rows="3" required></textarea>
+				</div>
+				<input type="hidden" name="_captcha" value="false">
+				<div>
+					<button type="submit">Send</button>
+				</div>
+			</form>
+		</section>
+	</main>
+</body>
+
+</html>

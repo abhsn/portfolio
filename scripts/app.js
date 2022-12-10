@@ -6,9 +6,9 @@ const menuBtnImg = document.querySelector('#menu-btn > img');
 // gets the height of header
 const headerHeight = headerTag.clientHeight;
 // adds top margin same as header height
-mainTag.style.marginTop = `${headerHeight}px`;
+// mainTag.style.marginTop = `${headerHeight}px`;
 // main element gets the rest of the window height
-mainTag.style.height = `${window.innerHeight - headerHeight}px`;
+// mainTag.style.height = `${window.innerHeight - headerHeight}px`;
 
 navTag.style.top = `${headerHeight}px`;
 
@@ -41,8 +41,8 @@ function toggleMenu() {
 
 // adds margin top to main and set height to main when window is resized
 window.addEventListener('resize', () => {
-	mainTag.style.marginTop = `${headerHeight}px`;
-	mainTag.style.height = `${window.innerHeight - headerHeight}px`;
+	// mainTag.style.marginTop = `${headerHeight}px`;
+	// mainTag.style.height = `${window.innerHeight - headerHeight}px`;
 	navTag.style.top = `${headerHeight}px`;
 	navTagWidth = navTag.clientWidth;
 	if (!showMenu) {
