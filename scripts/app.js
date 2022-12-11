@@ -1,7 +1,9 @@
 const headerTag = document.getElementsByTagName('header')[0];
 const mainTag = document.getElementsByTagName('main')[0];
-const navTag = document.getElementsByTagName('nav')[0];
+const navTag = document.querySelector('.mobile-nav');
 const menuBtnImg = document.querySelector('#menu-btn > img');
+
+document.body.style.overflow = 'auto';
 
 // gets the height of header
 const headerHeight = headerTag.clientHeight;

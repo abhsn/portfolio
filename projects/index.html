@@ -16,10 +16,18 @@
 				Hasan</span></a>
 		<button onclick="toggleMenu()" id="menu-btn"><img src="../assets/images/burger.svg" alt="burger" height="40px"
 				width="40px"></button>
-		<nav>
+		<nav class="desktop-nav">
 			<ul>
 				<li><a href="/">Home</a></li>
-				<li><a href="/projects">Porjects</a></li>
+				<li><a href="/projects">Projects</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+		</nav>
+		<nav class="mobile-nav">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/projects">Projects</a></li>
 				<li><a href="/about">About</a></li>
 				<li><a href="/contact">Contact</a></li>
 			</ul>
@@ -27,23 +35,51 @@
 	</header>
 
 	<main>
-		<section>
+		<section style="display: flex; flex-direction: column; gap: 20px; text-align: center;">
 			<h2>Projects</h2>
 			<p>These are the one of my best projects that I worked on so far</p>
 		</section>
 		<section class="projects">
-			<div>
-				<img src="../assets/images/your-book.png" alt="Your Book">
+			<div class="project">
+				<p><strong>Your Book</strong></p>
+				<p>Used book reselling e-commerce application</p>
+				<div class="blur">
+					<img src="../assets/images/your-book.png" alt="Your Book">
+					<div></div>
+				</div>
 				<button>View Details</button>
 			</div>
-			<div>
-				<img src="../assets/images/kool-photography.png" alt="Your Book">
+
+			<div class="project">
+				<p><strong>Kool Photography</strong></p>
+				<p>Personal website for photographer</p>
+				<div class="blur">
+					<img src="../assets/images/kool-photography.png" alt="Your Book">
+					<div></div>
+				</div>
+				<button>View Details</button>
 			</div>
-			<div>
-				<img src="../assets/images/supa-courses.png" alt="Your Book">
+			<div class="project">
+				<p><strong>Supa Courses</strong></p>
+				<p>E-learning platform</p>
+				<div class="blur">
+					<img src="../assets/images/supa-courses.png" alt="Your Book">
+					<div></div>
+				</div>
+				<button>View Details</button>
 			</div>
 		</section>
 	</main>
+
+	<footer>
+		<section>
+			<span class="social-icons"><a href="https://github.com/abhsn"></a></span>
+			<span class="social-icons"><a href="https://linkedin.com/in/ab1dhasan"></a></span>
+			<span class="social-icons" style="font-family: 'Font Awesome Regular';"><a
+					href="mailto:ab1dh4san@gmail.com"></a></span>
+		</section>
+		<span class="copyright">&copy; Abid Hasan 2022. Email: ab1dh4san@gmail.com</span>
+	</footer>
 </body>
 
 </html>

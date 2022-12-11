@@ -11,17 +11,31 @@
 </head>
 
 <body>
+	<noscript
+		style="height: 100%; display: grid; z-index: 2; background-color: white; position: absolute; width: 100%; place-items: center; font-family: sans-serif;">
+		Sorry for your inconvenient. But you must enable JavaScript to get full experience.
+	</noscript>
 	<header>
 		<a href="/"><span style="font-family: 'Dancing Script'; font-weight: 700; font-size: 30px;">Abid
 				Hasan</span></a>
 		<button onclick="toggleMenu()" id="menu-btn"><img src="assets/images/burger.svg" alt="burger" height="40px"
 				width="40px"></button>
-		<nav>
+		<nav class="desktop-nav">
 			<ul>
 				<li><a href="/">Home</a></li>
-				<li><a href="/projects">Porjects</a></li>
+				<li><a href="/projects">Projects</a></li>
 				<li><a href="/about">About</a></li>
 				<li><a href="/contact">Contact</a></li>
+				<li><a href="/contact">Resume</a></li>
+			</ul>
+		</nav>
+		<nav class="mobile-nav">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/projects">Projects</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/contact">Contact</a></li>
+				<li><a href="/contact">Resume</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -36,7 +50,7 @@
 			<a href="/projects/" class="projects-btn">View Projects</a>
 		</section>
 		<!-- social links -->
-		<section class="social-links">
+		<!-- <section class="social-links">
 			<ul>
 				<li title="Linked In">
 					<a href="htts://linkedin.com/in/ab1dhasan" target="_blank">
@@ -59,11 +73,17 @@
 					</a>
 				</li>
 			</ul>
-		</section>
+		</section> -->
 	</main>
 
 	<footer>
-		&copy; Abid Hasan 2022. Email: ab1dh4san@gmail.com
+		<section>
+			<span class="social-icons"><a href="https://github.com/abhsn"></a></span>
+			<span class="social-icons"><a href="https://linkedin.com/in/ab1dhasan"></a></span>
+			<span class="social-icons" style="font-family: 'Font Awesome Regular';"><a
+					href="mailto:ab1dh4san@gmail.com"></a></span>
+		</section>
+		<span class="copyright">&copy; Abid Hasan 2022. Email: ab1dh4san@gmail.com</span>
 	</footer>
 </body>
 
