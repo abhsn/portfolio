@@ -1,0 +1,102 @@
+@font-face {
+	font-family: 'Dancing Script';
+	src: url('../assets/fonts/DancingScript/DancingScript-VariableFont_wght.ttf');
+}
+
+header {
+	background: linear-gradient(45deg, #e66465, #9198e5);
+	color: white;
+	position: fixed;
+	width: 100%;
+	padding: 15px 20px;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	z-index: 2;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+}
+
+#menu-btn {
+	display: none;
+	border: none;
+	background: none;
+	color: white;
+	cursor: pointer;
+}
+
+header .mobile-nav {
+	position: fixed;
+	right: 0;
+	background-color: #222629;
+	width: 30%;
+	height: 100%;
+}
+
+.desktop-nav {
+	display: none;
+}
+
+header .mobile-nav li {
+	display: grid;
+	justify-items: center;
+	padding: 20px;
+}
+
+header .mobile-nav a {
+	color: white;
+	font-size: 17px;
+	text-decoration: none;
+}
+
+header .mobile-nav ul {
+	list-style: none;
+	margin: 20px 0;
+}
+
+.nav-animation-in {
+	animation-name: slidein;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+.nav-animation-out {
+	animation-name: slideout;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+	to {
+		right: 0;
+	}
+}
+
+@media (max-width: 560px) {
+	#menu-btn {
+		display: flex;
+	}
+}
+
+@media (min-width: 561px) {
+	.desktop-nav {
+		display: flex;
+	}
+
+	.desktop-nav ul {
+		display: flex;
+		list-style: none;
+		align-items: center;
+		gap: 40px;
+	}
+}
+
+@media (max-width: 620px) {
+	.desktop-nav ul {
+		gap: 20px;
+	}
+}

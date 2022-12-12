@@ -3,11 +3,6 @@
 	src: url('../assets/fonts/SpaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf');
 }
 
-@font-face {
-	font-family: 'Dancing Script';
-	src: url('../assets/fonts/DancingScript/DancingScript-VariableFont_wght.ttf');
-}
-
 * {
 	margin: 0;
 	padding: 0;
@@ -16,73 +11,10 @@
 
 body {
 	font-family: 'Space Grotesk';
-}
-
-header {
-	background: linear-gradient(45deg, #e66465, #9198e5);
-	color: white;
-	position: fixed;
-	width: 100%;
-	padding: 15px 20px;
-	top: 0;
-	left: 0;
+	height: 100vh;
 	display: flex;
-	justify-content: space-between;
-}
-
-header a {
-	color: white;
-	text-decoration: none;
-}
-
-#menu-btn {
-	border: none;
-	background: none;
-	color: white;
-	cursor: pointer;
-}
-
-header nav {
-	position: fixed;
-	right: 0;
-	background-color: #222629;
-	width: 30%;
-	height: 100%;
-}
-
-.nav-animation-in {
-	animation-name: slidein;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-}
-
-.nav-animation-out {
-	animation-name: slideout;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-}
-
-header nav li {
-	display: grid;
-	justify-items: center;
-	padding: 20px;
-}
-
-header nav a {
-	color: white;
-	font-size: 17px;
-	text-decoration: none;
-}
-
-header nav ul {
-	list-style: none;
-	margin: 20px 0;
-}
-
-@keyframes slidein {
-	to {
-		right: 0;
-	}
+	flex-direction: column;
+	background-color: #353841;
 }
 
 main {
@@ -91,21 +23,46 @@ main {
 	justify-content: center;
 	align-items: center;
 	text-transform: uppercase;
-	background-color: #2f3538;
-	/* background: linear-gradient(45deg, #e66465, #9198e5); */
+	background-color: #353841;
 	color: white;
-	/* height: 100vh; */
 	gap: 20px;
+	flex-grow: 1;
 }
 
 main section {
-	/* background-color: #e66465; */
 	width: 50%;
 	margin: 100px;
 }
 
+@media (max-width: 1200px) {
+	main section {
+		margin: 100px 50px;
+	}
+}
+
+@media (max-width: 800px) {
+	main {
+		flex-direction: column;
+		padding: 100px 0;
+		gap: 50px;
+	}
+
+	main section {
+		margin: 0;
+	}
+
+	main section:nth-child(1) {
+		text-align: center;
+	}
+}
+
+@media (max-width: 700px) {
+	main section {
+		width: 90%;
+	}
+}
+
 main form {
-	/* background-color: #9198e5; */
 	padding: 30px;
 	display: flex;
 	flex-direction: column;
@@ -135,7 +92,6 @@ main form button {
 	border: none;
 	color: white;
 	background: linear-gradient(45deg, #e66465, #9198e5);
-	/* border-radius: 5px; */
 	cursor: pointer;
 	padding: 10px 20px;
 	font-size: 1.15rem;
