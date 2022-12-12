@@ -24,7 +24,7 @@ main {
 	/* background: linear-gradient(45deg, #e66465, #9198e5); */
 	color: white;
 	height: 100vh;
-	background-image: url('https://unsplash.com/photos/1osIUArK5oA/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjcwNzQxMTkx&force=true&w=1920');
+	background-image: url('https://unsplash.com/photos/1osIUArK5oA/download?w=1920');
 	background-size: cover;
 }
 
