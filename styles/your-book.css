@@ -1,0 +1,104 @@
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('../assets/fonts/SpaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Space Grotesk';
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	background-color: #353841;
+}
+
+main {
+	flex-grow: 1;
+	margin: 100px 0;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+h2,
+p {
+	text-align: center;
+	max-width: 80%;
+	margin: auto;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+.image-container {
+	display: grid;
+	place-items: center;
+}
+
+.source-container p {
+	font-weight: bold;
+	text-align: start;
+	font-size: 1.15rem;
+	margin-bottom: 20px;
+}
+
+.source-button-container {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	gap: 10px;
+}
+
+.source-button-container button {
+	border: none;
+	background: linear-gradient(45deg, #e66465, #9198e5);
+	color: white;
+	font-size: 1rem;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.feature-container,
+.techs-container {
+	width: 80%;
+	margin: auto;
+}
+
+.feature-container p,
+.techs-container p {
+	font-weight: bold;
+	text-align: start;
+	font-size: 1.15rem;
+	margin-bottom: 20px;
+	margin-left: 0;
+}
+
+.feature-container li,
+.techs-container li {
+	margin-left: 40px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.feature-container img {
+	margin-left: 40px;
+}
+
+
+@media (max-width: 700px) {
+	.image-container {
+		width: 90%;
+		margin: auto;
+	}
+
+	.image-container img {
+		width: 100%;
+	}
+}

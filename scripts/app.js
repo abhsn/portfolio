@@ -26,19 +26,23 @@ function toggleMenu() {
 		navTag.classList.add('nav-animation-in');
 		document.body.style.overflow = 'hidden';
 		navTag.style.overflow = 'scroll';
-		menuBtnImg.src = '../assets/images/skull-crossbones.svg';
+		menuBtnImg.src = '/assets/images/skull-crossbones.svg';
 	} else {
 		navTag.classList.remove('nav-animation-in');
 		// navTag.style.right = `-${navTag.clientWidth}px`;
 		document.body.style.overflow = 'auto';
 		navTag.style.overflow = 'hidden';
-		menuBtnImg.src = '../assets/images/burger.svg';
+		menuBtnImg.src = '/assets/images/burger.svg';
 
 		const fadeOut = document.createElement('style');
 		fadeOut.innerText = `@keyframes slideout { from {right: 0;} to {right: ${navTagWidth}; } }`;
 		document.head.appendChild(fadeOut);
 		navTag.classList.add('nav-animation-out');
 	}
+}
+
+const redirect = link => {
+	window.open(link, '_blank').focus();
 }
 
 // adds margin top to main and set height to main when window is resized
