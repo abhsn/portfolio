@@ -39,6 +39,7 @@ header {
 	left: 0;
 	display: flex;
 	justify-content: space-between;
+	z-index: 2;
 }
 
 header a {
@@ -111,6 +112,8 @@ main {
 	/* background: linear-gradient(45deg, #e66465, #9198e5); */
 	color: white;
 	height: 100vh;
+	background-image: url('https://unsplash.com/photos/1osIUArK5oA/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjcwNzQxMTkx&force=true&w=1920');
+	background-size: cover;
 }
 
 .details {
@@ -123,6 +126,10 @@ main {
 	margin: auto;
 	text-align: justify;
 	gap: 20px;
+	z-index: 1;
+	backdrop-filter: blur(20px);
+	padding: 40px;
+	border-radius: 20px;
 }
 
 .details div {
@@ -150,28 +157,28 @@ main {
 	cursor: pointer;
 }
 
-.social-links {
+/* .social-links {
 	position: absolute;
 	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
-}
+} */
 
-.social-links a {
+/* .social-links a {
 	color: white;
 	text-decoration: none;
-}
+} */
 
-.social-links ul {
+/* .social-links ul {
 	list-style: none;
 	display: grid;
 	gap: 10px;
-}
+} */
 
-.social-links li {
-	/* padding: 5px 10px; */
-	/* background-color: white; */
-}
+/* .social-links li {
+	padding: 5px 10px;
+	background-color: white;
+} */
 
 .name {
 	background: linear-gradient(45deg, #e66465, #9198e5);
@@ -182,10 +189,10 @@ main {
 footer {
 	display: grid;
 	justify-items: center;
-	padding: 40px 0;
+	padding: 20px 0;
 	background-color: #222527;
 	color: white;
-	gap: 20px;
+	gap: 10px;
 }
 
 footer section {
@@ -204,7 +211,7 @@ footer a {
 
 .social-icons {
 	font-family: 'Font Awesome Brands';
-	font-size: 35px;
+	font-size: 25px;
 }
 
 @media (max-width: 560px) {
