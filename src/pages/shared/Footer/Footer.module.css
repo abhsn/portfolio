@@ -1,0 +1,33 @@
+@font-face {
+	font-family: 'Font Awesome Regular';
+	src: url(../../../assets/fonts/FontAwesome/fa-regular-400.woff2);
+}
+
+@font-face {
+	font-family: 'Font Awesome Brands';
+	src: url(../../../assets/fonts/FontAwesome/fa-brands-400.woff2);
+}
+
+footer {
+	background-color: #222527;
+	color: white;
+	padding: 20px 0;
+	display: grid;
+	justify-items: center;
+	gap: 10px;
+}
+
+footer section {
+	display: flex;
+	gap: 20px;
+}
+
+.socailIcons {
+	font-family: 'Font Awesome Brands', 'Font Awesome Regular';
+}
+
+.socailIcons a {
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+}
