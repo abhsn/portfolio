@@ -65,6 +65,14 @@ h2 {
 	cursor: pointer;
 }
 
+.source-button-container a {
+	background: linear-gradient(45deg, #e66465, #9198e5);
+	color: white;
+	font-size: 1rem;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
 .feature-container,
 .techs-container {
 	width: 80%;
