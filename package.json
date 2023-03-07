@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev": "live-server --port=5000 --no-browser --ignore=./Node_Modules"
+  },
+  "devDependencies": {
+    "@compodoc/live-server": "^1.2.3"
+  }
+}
